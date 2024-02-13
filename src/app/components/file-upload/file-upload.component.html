@@ -1,0 +1,20 @@
+<app-header></app-header>
+
+<div class="main-content" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
+  <input type="file" (change)="onFileSelected($event, 'State-Issued ID')" style="margin-bottom: 10px;">
+  <br>
+  <input type="file" (change)="onFileSelected($event, 'Driver\'s License')" style="margin-bottom: 10px;">
+  <br>
+  <input type="file" (change)="onFileSelected($event, 'Passport')" style="margin-bottom: 10px;">
+  <br>
+  <input type="file" (change)="onFileSelected($event, 'Social Security Card')" style="margin-bottom: 10px;">
+  <br>
+  <input type="file" (change)="onFileSelected($event, 'Proof of Address')" style="margin-bottom: 10px;">
+  <br>
+  <button (click)="onUpload()" style="background-color: #4CAF50; color: white; padding: 10px;">Upload</button>
+  <br>
+  <div *ngIf="overallProgress > 0">
+    <progress max="100" [value]="overallProgress"></progress>
+    <span>{{ overallProgress }}%</span>
+  </div>
+</div>

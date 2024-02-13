@@ -1,0 +1,102 @@
+@import "../../../assets/css/font-awesome.css";
+
+.sticky-header .main-content {
+  padding-top: 40px;
+}
+
+
+.welcome-msg {
+  text-align: left;
+}
+
+.welcome-msg h1 {
+  font-size: 24px;
+}
+
+.welcome-msg p {
+  font-size: 14px;
+}
+
+.statistics-grid {
+  margin-bottom: 18px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+}
+
+.card-title {
+  margin-bottom: 0.75rem;
+}
+
+.card-text:last-child {
+  margin-bottom: 0;
+}
+
+.card-link:hover {
+  text-decoration: none;
+}
+
+.card-link + .card-link {
+  margin-left: 1.25rem;
+}
+
+.card-header {
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.card-footer {
+  padding: 0.75rem 1.25rem;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.border-primary-top {
+  border-top: 4px solid #343a40;
+}
+
+.border-primary-top:hover {
+  border-top: 4px solid #57b846;
+  cursor: pointer;
+}
+
+.statistics-grid .fa,
+.statistics-grid .lnr {
+  font-size: 50px;
+  color: #aaa;
+  margin-bottom: 15px;
+  transition: 0.3s ease;
+  opacity: 0.3;
+  position: absolute;
+}
+
+.statistics-grid .card__grid--effect .fa,
+.statistics-grid .card__grid--effect .lnr {
+  color: #aba9a9;
+  margin-bottom: 0;
+  border-radius: 200px;
+  line-height: 60px;
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  text-align: center;
+  font-size: 22px;
+}
+
